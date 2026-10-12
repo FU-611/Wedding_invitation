@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173d67">
+  <title>Amira & Mohamed — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><div id="introPage">
+  <div class="cover-card">
+
+    <div class="cover-heart">♥</div>
+
+    <h1>Amira</h1>
+    <div class="cover-amp">&</div>
+    <h1>Mohamed</h1>
+
+    <div class="cover-divider">♥</div>
+
+    <p class="cover-date">November 6, 2026</p>
+    <p class="cover-invite">Cordially Invites</p>
+
+    <button id="openInvitation">Open</button>
+
+  </div>
+</div>
+
+<audio id="weddingMusic" loop>
+  <source src="maro.mp3" type="audio/mpeg">
+</audio>
+  <main class="page">
+    <div class="floral floral-left" aria-hidden="true">✿<span>❀</span>✾<span>❁</span>✿</div>
+    <div class="floral floral-right" aria-hidden="true">✿<span>❀</span>✾<span>❁</span>✿</div>
+    <header class="hero">
+      <div class="corner corner-tl">☾ ❦</div><div class="corner corner-tr">❦ ☾</div>
+      <p class="eyebrow">A CELEBRATION OF LOVE</p>
+      <div class="tiny-heart">♥</div>
+      <h1>Amira <i>&amp;</i> Mohamed</h1>
+      <p class="script">Together with their families</p>
+      <div class="rule"><span>✦</span></div>
+      <p class="invite-line">Joyfully invite you to share in their special day</p>
+      <p class="hero-date">06 <span>·</span> 11 <span>·</span> 2026</p>
+    </header>
+
+    <section class="countdown-section" aria-label="Wedding countdown">
+      <h2 class="section-title">COUNTDOWN</h2>
+      <p id="countdown" class="countdown">Loading the moments...</p>
+    </section>
+
+    <section class="calendar-card" aria-label="Wedding date calendar">
+      <div class="calendar-ornament top-left">☾<span>✿</span></div>
+      <div class="calendar-ornament top-right">☾<span>✿</span></div>
+      <h2>November 2026</h2>
+      <div class="weekdays">
+        <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+      </div>
+      <div class="calendar-grid" id="calendarGrid" aria-label="November 2026 calendar"></div>
+      <div class="calendar-ornament bottom-left">✿<span>☾</span></div>
+      <div class="calendar-ornament bottom-right">✿<span>☾</span></div>
+    </section>
+
+    <div class="calendar-action">
+      <button id="addCalendar" class="text-link">Add to Calendar</button>
+      <p id="calendarStatus" class="status" aria-live="polite"></p>
+    </div>
+
+    <section class="venue-section">
+      <p class="eyebrow">CELEBRATE WITH US</p>
+      <h2>WEDDING RECEPTION VENUE</h2>
+      <p class="venue-name">Boulevard Hall, Ras Elbar</p>
+      <a class="location-button" href="https://maps.app.goo.gl/Zg7W8HBQLAJpKBww8" target="_blank" rel="noopener noreferrer"> <span>⌖</span> OPEN LOCATION</a>
+    </section>
+
+    <section class="memories">
+      <p class="eyebrow">A LITTLE LOVE, A LOT OF MEMORIES</p>
+      <h2>Amira <i>&amp;</i> Mohamed</h2>
+      <div class="gallery">
+        <img class="couple-photo" src="images/couple.jpg" alt="Amira and Mahmoud together">
+        <img src="images/mahmoud.jpg" alt="Mahmoud">
+        <img src="images/amira.jpg" alt="Amira">
+      </div>
+      <p class="script closing">We can't wait to celebrate with you</p>
+      <div class="rule"><span>♥</span></div>
+    </section>
+    <footer>MADE WITH LOVE <span>♥</span> AMIRA &amp; MOHAMED</footer>
+  </main>
+  <script src="script.js"></script>
+</audio>
+</body>
+</html>

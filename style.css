@@ -1,0 +1,198 @@
+*{box-sizing:border-box}
+:root{--navy:#173d67;--deep:#0d2b4c;--gold:#b49a61;--gold-light:#d9c99d;--ivory:#fcf9f0;--muted:#697785}
+html{scroll-behavior:smooth}
+body{margin:0;background:#e7e3d9;color:var(--navy);font-family:"Cormorant Garamond",Georgia,serif}
+button,a{font:inherit}
+.page{position:relative;isolation:isolate;overflow:hidden;max-width:900px;margin:0 auto;min-height:100vh;padding:24px clamp(18px,5vw,56px) 22px;background:radial-gradient(ellipse at 4% 35%,#d9e4e6a8,transparent 30%),radial-gradient(ellipse at 98% 65%,#d9e4e6a8,transparent 32%),linear-gradient(135deg,#fffdf7,#f8f3e7 55%,#fffdf8);box-shadow:0 0 50px #182c4015}
+.page:before{content:"";position:absolute;inset:12px;border:1px solid #bba56e;pointer-events:none;z-index:-1}
+.floral{position:absolute;z-index:-1;top:16%;display:flex;flex-direction:column;gap:0;color:#527da4;opacity:.62;font-size:clamp(38px,7vw,76px);line-height:.85;text-shadow:1px 2px 0 #d4bf86;pointer-events:none}
+.floral span{font-size:.7em;color:#8ba8b7;margin-left:25px}
+.floral-left{left:-13px;transform:rotate(-24deg)}.floral-right{right:-13px;transform:scaleX(-1) rotate(-24deg);top:35%}
+.hero{text-align:center;position:relative;padding:55px 12px 20px}
+.corner{position:absolute;top:16px;color:var(--gold);font-size:30px}.corner-tl{left:18px}.corner-tr{right:18px;transform:scaleX(-1)}
+.eyebrow{font:500 10px Montserrat,sans-serif;letter-spacing:3px;color:var(--gold);margin:0 0 14px}
+.tiny-heart{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:white;margin:0 auto 12px;font-size:14px;box-shadow:0 3px 9px #173d6728}
+h1{font-size:clamp(43px,8vw,74px);font-weight:500;line-height:1;margin:0;color:var(--navy)}
+h1 i,h2 i{color:var(--gold);font-weight:400}
+.script{font-family:"Great Vibes",cursive;color:#708da5;font-size:clamp(25px,4vw,35px);margin:14px 0}
+.rule{width:130px;margin:17px auto;color:var(--gold);border-top:1px solid var(--gold-light);height:8px;position:relative}.rule span{position:relative;top:-13px;background:var(--ivory);padding:0 12px}
+.invite-line{font-size:18px;margin:7px 0 12px;color:#68727c}.hero-date{font:500 13px Montserrat,sans-serif;letter-spacing:5px;margin:0;color:var(--navy)}.hero-date span{color:var(--gold)}
+.countdown-section{text-align:center;padding:10px 0 28px}
+.section-title{font:600 16px Montserrat,sans-serif;letter-spacing:4px;margin:0 0 13px;color:var(--navy)}
+.countdown{font-size:clamp(17px,3vw,22px);margin:0;color:#6c6558}
+.calendar-card{position:relative;max-width:690px;margin:0 auto;padding:30px clamp(18px,5vw,42px) 34px;border:2px solid var(--gold-light);outline:1px solid #c0a76c;outline-offset:4px;background:rgba(255,253,247,.78);box-shadow:inset 0 0 0 5px #e7dcc0,0 12px 30px #263e5010}
+.calendar-card h2{text-align:center;font:600 21px Montserrat,sans-serif;letter-spacing:1px;margin:8px 0 28px}
+.weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));text-align:center}
+.weekdays{border-bottom:3px solid var(--navy);padding-bottom:13px;color:#8b8b87;font:500 13px Montserrat,sans-serif}
+.calendar-grid{row-gap:7px;padding-top:17px}
+.day{display:grid;place-items:center;min-height:45px;font:400 18px Montserrat,sans-serif;color:#667581;position:relative}
+.day.empty{pointer-events:none}
+.day.wedding{color:white;font-weight:600;z-index:0}
+.day.wedding:before{content:"";position:absolute;width:37px;height:37px;background:var(--navy);border-radius:50% 50% 50% 8%;transform:rotate(-45deg);z-index:-1;box-shadow:0 3px 6px #173d6730}
+.day.wedding:after{content:"♥";position:absolute;top:-1px;right:calc(50% - 23px);font-size:9px;color:var(--gold-light)}
+.calendar-ornament{position:absolute;color:var(--navy);font-size:31px;line-height:1;text-shadow:1px 1px 0 var(--gold)}.calendar-ornament span{display:block;color:#7898af;font-size:23px}.top-left{top:7px;left:9px}.top-right{top:7px;right:9px;transform:scaleX(-1)}.bottom-left{bottom:5px;left:9px;transform:rotate(180deg)}.bottom-right{bottom:5px;right:9px;transform:rotate(180deg) scaleX(-1)}
+.calendar-action{text-align:center;padding:30px 10px 54px;min-height:90px}
+.text-link{background:transparent;border:0;border-bottom:1px solid var(--navy);padding:0 0 4px;color:#4b4b48;font-size:21px;cursor:pointer}
+.text-link:hover{color:var(--gold)}
+.status{font-size:13px;color:#7b786e;margin:9px 0 0}
+.venue-section{text-align:center;padding:20px 5px 58px;border-top:1px solid #d6c69e;border-bottom:1px solid #d6c69e}
+.venue-section h2{font-size:clamp(20px,4.2vw,31px);letter-spacing:3px;font-weight:700;margin:0 0 20px}
+.venue-name{font-size:clamp(20px,3.5vw,26px);color:#514d48;margin:0 auto 23px}
+.location-button{display:inline-flex;align-items:center;gap:9px;border-radius:99px;background:var(--navy);color:white;text-decoration:none;font:600 11px Montserrat,sans-serif;letter-spacing:1.8px;padding:13px 23px;box-shadow:0 5px 13px #173d6726}
+.location-button:hover{background:var(--deep);transform:translateY(-1px)}
+.location-button span{font-size:17px}
+.memories{text-align:center;padding:45px 0 28px}.memories h2{font-size:clamp(36px,7vw,56px);font-weight:500;margin:0 0 24px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:800px;margin:0 auto}.gallery img{width:100%;height:350px;object-fit:cover;border:5px solid #fffdf8;outline:1px solid var(--gold-light);box-shadow:0 7px 20px #20374d13}.gallery .couple-photo{grid-column:1/-1;height:500px;object-position:center 35%}
+.closing{margin-top:28px}
+footer{text-align:center;padding:16px 0 6px;color:#8d8063;font:500 9px Montserrat,sans-serif;letter-spacing:2px}footer span{color:var(--navy);padding:0 6px}
+@media(max-width:520px){.page{padding:12px 15px 18px}.page:before{inset:6px}.hero{padding-top:48px}.corner{font-size:22px}.floral{font-size:44px;opacity:.48}.calendar-card{padding:27px 10px 31px}.calendar-card h2{font-size:17px;margin-bottom:22px}.weekdays{font-size:10px;padding-bottom:11px}.calendar-grid{row-gap:3px;padding-top:12px}.day{min-height:39px;font-size:14px}.day.wedding:before{width:31px;height:31px}.day.wedding:after{right:calc(50% - 20px);font-size:8px}.calendar-ornament{font-size:24px}.calendar-ornament span{font-size:18px}.calendar-action{padding:25px 5px 42px}.venue-section{padding:17px 0 42px}.venue-section h2{letter-spacing:2px}.gallery{gap:8px}.gallery img{height:220px}.gallery .couple-photo{height:290px}}
+
+#introPage {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #204875;
+}
+
+.cover-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  width: 100%;
+  max-width: 540px;
+  min-height: 690px;
+  box-sizing: border-box;
+  padding: 38px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #21456e;
+  background: #fffdf7;
+  border: 1px solid #e9dfc9;
+  border-radius: 10px;
+  box-shadow: 0 18px 45px #091d354d;
+}
+
+/* الزهور على جانبي الكارت */
+.cover-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      to right,
+      #fffdf7aa,
+      #fffdf7 38%,
+      #fffdf7 62%,
+      #fffdf7aa
+    ),
+    url("flowers.jpg") center / cover no-repeat;
+  opacity: 0.95;
+}
+
+.cover-heart {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #204875;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 42px;
+  box-shadow: 0 8px 25px #20487540;
+}
+
+.cover-card h1 {
+  margin: 3px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 8vw, 53px);
+  font-weight: normal;
+  letter-spacing: -2px;
+}
+
+.cover-amp {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-style: italic;
+  color: #ad9664;
+  margin: 2px 0;
+}
+
+.cover-divider {
+  width: 190px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  color: #ad9664;
+}
+
+.cover-divider::before,
+.cover-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #ad9664;
+}
+
+.cover-date {
+  font: 24px Georgia, serif;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.cover-invite {
+  font: 23px Georgia, serif;
+  margin: 18px 0 28px;
+}
+
+#openInvitation {
+  border: none;
+  border-radius: 40px;
+  padding: 17px 60px;
+  color: white;
+  background: #204875;
+  font: bold 24px Georgia, serif;
+  cursor: pointer;
+  box-shadow: 0 8px 20px #20487538;
+  transition: transform 0.2s;
+}
+
+#openInvitation:hover {
+  transform: translateY(-2px);
+}
+
+#introPage.closing {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+@media (max-width: 600px) {
+  .cover-card {
+    min-height: min(690px, 82dvh);
+  }
+
+  .cover-heart {
+    width: 78px;
+    height: 78px;
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .cover-date {
+    font-size: 21px;
+  }
+
+  .cover-invite {
+    font-size: 20px;
+  }
+}
